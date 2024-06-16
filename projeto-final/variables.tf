@@ -6,11 +6,13 @@ variable "region" {
 variable "aws_access_key" {
   description = "Access Key ID da AWS"
   type        = string
+  default     = ${{ secrets.AWS_ACCESS_KEY_ID }}
 }
 
 variable "aws_secret_key" {
   description = "Secret Access Key da AWS"
   type        = string
+  default     = ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 }
 
 variable "project_name" {
