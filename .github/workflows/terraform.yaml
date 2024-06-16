@@ -50,7 +50,6 @@ jobs:
 
       - name: "Terraform Apply"
         run: terraform apply -auto-approve
-        if: github.event_name == 'workflow_dispatch'
         working-directory: ./projeto-final
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
