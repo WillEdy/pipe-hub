@@ -17,6 +17,7 @@ jobs:
     defaults:
       run:
         shell: bash
+        
 
     steps:
       - name: Checkout repository
