@@ -1,7 +1,7 @@
 variable "project_name" {
   description = "O nome do projeto baseado no ambiente de execução"
   type        = string
-  default     = "willedy-projeto-terraform-pipeline"
+  default     = "willedy-pipeline"
 }
 
 variable "environment" {
